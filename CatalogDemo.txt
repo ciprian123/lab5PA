@@ -1,0 +1,3 @@
+CatalogDemo,CatalogDemo.txt
+2
+#1,Doc picture,C:\Users\cipri\OneDrive\Desktop\Resources\dog.jpg,about:smol dog,type:picture,#2,ML 0,C:\Users\cipri\OneDrive\Desktop\Resources\ml0.pdf,about:ML,type:pdf,

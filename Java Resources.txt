@@ -1,0 +1,3 @@
+Java Resources,Java Resources.txt
+1
+java1,Java Course 1,https://profs.info.uaic.ro/~acf/java/slides/en/intro_slide_en.pdf,type:Slides,
