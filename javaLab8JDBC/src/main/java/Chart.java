@@ -1,5 +1,3 @@
-package com.ciprianursulean.javalab8;
-
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;

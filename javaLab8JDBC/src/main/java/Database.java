@@ -1,27 +1,30 @@
-package com.ciprianursulean.javalab8;
-
+import javax.xml.crypto.Data;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Database {
-    private static Connection connection = null;
-    public Database(String path, String username, String password) {
+    private static Connection connection;
+    private static Database instance;
+
+    private Database() {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            connection = DriverManager.getConnection(path, username, password);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3308/MusicAlbums", "dba", "sql");
+        } catch (Exception ex) {
+            System.out.println("Database Connection Creation Failed : " + ex.getMessage());
         }
-        catch (Exception ex) {
-            System.out.println(ex.getMessage());
+    }
+
+    public static Database getInstance() {
+        if (instance == null) {
+            instance = new Database();
         }
+        return instance;
     }
 
     public Connection getConnection() {
         return connection;
-    }
-
-    public static Database getInstance() {
-        return new Database("jdbc:mysql://localhost:3308/MusicAlbums", "dba", "sql");
     }
 
     public static void closeConnection() {

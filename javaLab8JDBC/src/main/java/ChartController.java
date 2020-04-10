@@ -1,5 +1,3 @@
-package com.ciprianursulean.javalab8;
-
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.*;

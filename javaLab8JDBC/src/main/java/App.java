@@ -1,5 +1,3 @@
-package com.ciprianursulean.javalab8;
-
 import java.io.IOException;
 import java.sql.SQLException;
 

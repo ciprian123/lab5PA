@@ -1,5 +1,3 @@
-package com.ciprianursulean.javalab8;
-
 import com.github.javafaker.Faker;
 
 import java.sql.*;

@@ -1,5 +1,3 @@
-package com.ciprianursulean.javalab8;
-
 public class Artist {
     private int id;
     private String name;
